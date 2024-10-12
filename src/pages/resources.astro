@@ -1,104 +1,157 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>[ redacted ] [ resources ]</title>
-  </head>
+---
+import Layout from "../layouts/Layout.astro";
+---
 
-  <body>
-    <h1>Resources</h1>
+<Layout title="[REDACTED RESOURCES]">
+  <section class="text-xs sm:text-base">
+    <h2 class="text-lg md:text-xl mb-3">[RESOURCES]</h2>
 
-    <p>Resource dump?? Shifting my bookmarks to web.</p>
-
-    <div>
-      <a href="./index.html">[home]</a>
-      <a href="./posts.html">[posts]</a>
-      <a href="./resources.html">[resources]</a>
-      <a href="https://github.com/0x-kys" target="__blank">[github]</a>
-    </div>
-
-    <table>
+    <table class="w-full text-left">
       <tr>
         <th>Site</th>
         <th>Link</th>
       </tr>
 
       <tr>
+        <td>[Programming] Ray Tracing Guide</td>
+        <td>
+          <a
+            href="https://github.com/RayTracing/raytracing.github.io"
+            target="_blank"
+          >
+            [Visit]
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>[Programming] Beej's Guide to C Programming</td>
+        <td>
+          <a href="https://beej.us/guide/bgc/" target="_blank"> [Visit] </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td
+          >[Web Security - OWASP] Building Secure Web Applications and Services</td
+        >
+        <td>
+          <a
+            href="https://owasp.org/www-project-developer-guide/release/"
+            target="_blank"
+          >
+            [Visit]
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>[NixOS (ThisCuteWorld)] NixOS and Flakes</td>
+        <td>
+          <a href="https://nixos-and-flakes.thiscute.world/" target="_blank">
+            [Visit]
+          </a>
+        </td>
+      </tr>
+
+      <tr>
+        <td>[DSA] NeetCode</td>
+        <td>
+          <a href="https://neetcode.io/" target="_blank"> [Visit] </a>
+        </td>
+      </tr>
+
+      <tr>
         <td>[Projects] Build your own X</td>
         <td>
-          <a href="https://github.com/codecrafters-io/build-your-own-x" target="_blank"> Visit </a>
+          <a
+            href="https://github.com/codecrafters-io/build-your-own-x"
+            target="_blank"
+          >
+            [Visit]
+          </a>
         </td>
       </tr>
 
       <tr>
         <td>[NixOS] Simple Home Manager Setup</td>
         <td>
-          <a href="https://github.com/Evertras/simple-homemanager" target="_blank"> Visit </a>
+          <a
+            href="https://github.com/Evertras/simple-homemanager"
+            target="_blank"
+          >
+            [Visit]
+          </a>
         </td>
       </tr>
       <tr>
         <td>[Readable] Make your own Tools</td>
         <td>
-          <a href="https://x.com/alia0209/status/1837538076316274932" target="_blank"> Visit </a>
+          <a
+            href="https://x.com/alia0209/status/1837538076316274932"
+            target="_blank"
+          >
+            [Visit]
+          </a>
         </td>
       </tr>
       <tr>
         <td>[Resauce] Learn X in Y minutes</td>
         <td>
-          <a href="https://learnxinyminutes.com/" target="_blank"> Visit </a>
+          <a href="https://learnxinyminutes.com/" target="_blank"> [Visit] </a>
         </td>
       </tr>
       <tr>
         <td>[Algo] Visual Algo</td>
         <td>
-          <a href="https://visualgo.net/en" target="_blank"> Visit </a>
+          <a href="https://visualgo.net/en" target="_blank"> [Visit] </a>
         </td>
       </tr>
       <tr>
         <td>[Virtualize] OS Boxes</td>
         <td>
           <a href="https://www.osboxes.org/virtualbox-images/" target="_blank">
-            Visit
+            [Visit]
           </a>
         </td>
       </tr>
       <tr>
         <td>[Tool] Color Hunt</td>
         <td>
-          <a href="https://colorhunt.co/" target="_blank"> Visit </a>
+          <a href="https://colorhunt.co/" target="_blank"> [Visit] </a>
         </td>
       </tr>
       <tr>
         <td>[Docs] JavaScript Info</td>
         <td>
-          <a href="https://javascript.info/" target="_blank"> Visit </a>
+          <a href="https://javascript.info/" target="_blank"> [Visit] </a>
         </td>
       </tr>
       <tr>
         <td>[Docs] HackTricks</td>
         <td>
-          <a href="https://book.hacktricks.xyz/" target="_blank"> Visit </a>
+          <a href="https://book.hacktricks.xyz/" target="_blank"> [Visit] </a>
         </td>
       </tr>
       <tr>
         <td>[Docs] DevDocs</td>
         <td>
-          <a href="https://devdocs.io/" target="_blank"> Visit </a>
+          <a href="https://devdocs.io/" target="_blank"> [Visit] </a>
         </td>
       </tr>
       <tr>
         <td>[Notes/Docs] Go - shichao notes</td>
         <td>
-          <a href="https://notes.shichao.io/golang/" target="_blank"> Visit </a>
+          <a href="https://notes.shichao.io/golang/" target="_blank">
+            [Visit]
+          </a>
         </td>
       </tr>
       <tr>
         <td>[Docs] Rust Books</td>
         <td>
           <a href="https://github.com/sger/RustBooks" target="_blank">
-            Visit
+            [Visit]
           </a>
         </td>
       </tr>
@@ -109,7 +162,7 @@
             href="https://github.com/practical-tutorials/project-based-learning"
             target="_blank"
           >
-            Visit
+            [Visit]
           </a>
         </td>
       </tr>
@@ -120,7 +173,7 @@
             href="https://therealunicornsecurity.github.io/OSCP/"
             target="_blank"
           >
-            Visit
+            [Visit]
           </a>
         </td>
       </tr>
@@ -128,7 +181,7 @@
         <td>[Resauce] malpedia</td>
         <td>
           <a href="https://malpedia.caad.fkie.fraunhofer.de/" target="_blank">
-            Visit
+            [Visit]
           </a>
         </td>
       </tr>
@@ -139,7 +192,7 @@
             href="http://www.catb.org/~esr/faqs/hacker-howto.html"
             target="_blank"
           >
-            Visit
+            [Visit]
           </a>
         </td>
       </tr>
@@ -147,14 +200,14 @@
         <td>[Algo/Notes] Algorithms for Competitive Programming</td>
         <td>
           <a href="https://cp-algorithms.com/index.html" target="_blank">
-            Visit
+            [Visit]
           </a>
         </td>
       </tr>
       <tr>
         <td>[Resauce] Learn Learnin'</td>
         <td>
-          <a href="https://learnlearn.in/" target="_blank"> Visit </a>
+          <a href="https://learnlearn.in/" target="_blank"> [Visit] </a>
         </td>
       </tr>
       <tr>
@@ -164,48 +217,50 @@
             href="https://austinhenley.com/blog/challengingprojects.html"
             target="_blank"
           >
-            Visit
+            [Visit]
           </a>
         </td>
       </tr>
       <tr>
         <td>[Resauce] FullStackOpen</td>
         <td>
-          <a href="https://fullstackopen.com/en/" target="_blank"> Visit </a>
+          <a href="https://fullstackopen.com/en/" target="_blank"> [Visit] </a>
         </td>
       </tr>
       <tr>
         <td>[Tool] Happy Hues</td>
         <td>
-          <a href="https://www.happyhues.co/" target="_blank"> Visit </a>
+          <a href="https://www.happyhues.co/" target="_blank"> [Visit] </a>
         </td>
       </tr>
       <tr>
         <td>[Docs] LaTeX Cheatsheet</td>
         <td>
-          <a href="https://quickref.me/latex.html" target="_blank"> Visit </a>
+          <a href="https://quickref.me/latex.html" target="_blank"> [Visit] </a>
         </td>
       </tr>
       <tr>
         <td>[Resauce] LLM Visualization</td>
         <td>
-          <a href="https://bbycroft.net/llm" target="_blank"> Visit </a>
+          <a href="https://bbycroft.net/llm" target="_blank"> [Visit] </a>
         </td>
       </tr>
       <tr>
         <td>[Resauce] Python Morsels</td>
         <td>
-          <a href="https://www.pythonmorsels.com/" target="_blank"> Visit </a>
+          <a href="https://www.pythonmorsels.com/" target="_blank"> [Visit] </a>
         </td>
       </tr>
       <tr>
-        <td>[Readable/Resauce] "Writing a Simple Operating System - from Scratch"</td>
+        <td
+          >[Readable/Resauce] "Writing a Simple Operating System - from Scratch"</td
+        >
         <td>
           <a
             href="https://www.cs.bham.ac.uk/~exr/lectures/opsys/10_11/lectures/os-dev.pdf"
             target="_blank"
           >
-            Visit
+            [Visit]
           </a>
         </td>
       </tr>
@@ -216,7 +271,7 @@
             href="https://christianjmills.com/series/notes/cuda-mode-notes.html"
             target="_blank"
           >
-            Visit
+            [Visit]
           </a>
         </td>
       </tr>
@@ -227,43 +282,42 @@
             href="https://cursey.github.io/reframework-book/index.html"
             target="_blank"
           >
-            Visit
+            [Visit]
           </a>
         </td>
       </tr>
       <tr>
-        <td>[Resauce] Assembly / Reversing / Malware Analysis / Game Hacking-resources </td>
+        <td
+          >[Resauce] Assembly / Reversing / Malware Analysis / Game
+          Hacking-resources
+        </td>
         <td>
           <a
             href="https://gist.github.com/muff-in/ff678b1fda17e6188aa0462a99626121"
             target="_blank"
           >
-            Visit
+            [Visit]
           </a>
         </td>
       </tr>
       <tr>
         <td>[Resauce] theZoo - A Live Malware Repository </td>
         <td>
-          <a
-            href="https://github.com/ytisf/theZoo"
-            target="_blank"
-          >
-            Visit
+          <a href="https://github.com/ytisf/theZoo" target="_blank">
+            [Visit]
           </a>
         </td>
       </tr>
       <tr>
         <td>[Resauce/Docs] nand2tetris </td>
         <td>
-          <a
-            href="https://www.nand2tetris.org/"
-            target="_blank"
-          >
-            Visit
-          </a>
+          <a href="https://www.nand2tetris.org/" target="_blank"> [Visit] </a>
         </td>
       </tr>
     </table>
-  </body>
-</html>
+  </section>
+
+  <hr class="my-6" />
+</Layout>
+
+<style></style>

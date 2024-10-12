@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --light-bg: #ffffff;
+  --light-fg: #000000;
+
+  --dark-bg: #000000;
+  --dark-fg: #ffffff;
+}
+
+html {
+  background: var(--light-bg);
+  color: var(--light-fg);
+  cursor: crosshair;
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  line-height: 1.6;
+}
+
+code {
+  font-family: "JetBrains Mono", monospace;
+}
+
+table {
+  margin-top: 1rem;
+  text-align: left;
+}
+
+table th {
+  background: var(--light-fg), 0.1;
+}
+
+table td,
+table th {
+  border: 1px solid var(--light-fg);
+  text-align: left;
+  padding: 0.25em;
+}
+
+iframe {
+  margin: 0.25rem 0;
+}
+
+a {
+  font-weight: bold;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

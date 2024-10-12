@@ -1,0 +1,51 @@
+---
+import Layout from "../layouts/Layout.astro";
+import Card from "../components/Card.astro";
+---
+
+<Layout title="[REDACTED]">
+  <section
+    class="flex flex-col gap-x-0 gap-y-6 items-center justify-center md:flex-row md:gap-x-6 md:gap-y-0"
+  >
+    <img src="/pfp.jpg" alt="iyuko kita" class="h-64 w-64 md:h-32 md:w-32" />
+    <div>
+      <p>
+        heluu!! i'm <strong>syk</strong>, a full-stack engineer working @
+        [REDACTED] & a sweet oomfie on [X DOT COM].
+      </p>
+      <p>
+        gopher <img
+          src="/dancing-gopher.gif"
+          alt="dancing gopher"
+          class="h-6 w-6 inline"
+        /> && average low-level (systems) enjoyer.
+      </p>
+      <ul
+        class="flex items-center justify-center md:items-start md:justify-normal gap-x-2 mt-2"
+      >
+        <li><a href="http://x.com/0x_syk" target="_blank">[X DOT COM]</a></li>
+        <li><a href="http://github.com/0x-kys" target="_blank">[GITHUB]</a></li>
+      </ul>
+    </div>
+  </section>
+
+  <hr class="my-6" />
+
+  <section class="projects mx-0 md:mx-6 lg:mx-12">
+    <h2 class="text-lg md:text-xl mb-3">[PROJECTS]</h2>
+    <ul class="projects-container flex flex-col">
+      <Card
+        title="site"
+        body="this site. redesigned using astro."
+        href="https://github.com/0x-kys/0x-kys.github.io"
+      />
+      <Card
+        title="rs-get"
+        body="simple rust tool to fetch content from web"
+        href="https://github.com/0x-kys/rs-get"
+      />
+    </ul>
+  </section>
+</Layout>
+
+<style></style>
