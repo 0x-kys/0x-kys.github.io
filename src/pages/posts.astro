@@ -1,13 +1,46 @@
 ---
 import Layout from "../layouts/Layout.astro";
+
+const postImportResult = import.meta.glob("./posts/*.md", { eager: true });
+const posts = Object.entries(postImportResult).map(([path, post]: any) => ({
+  title: post.frontmatter.title || "Untitled",
+  date: post.frontmatter.date ? new Date(post.frontmatter.date) : new Date(0),
+  author: post.frontmatter.author || "redacted",
+  desc: post.frontmatter.desc || "...",
+  slug: path.replace("./posts/", "").replace(".md", ""),
+}));
+
+posts.sort((a, b) => b.date.getTime() - a.date.getTime());
 ---
 
 <Layout title="[REDACTED POSTS]">
   <section>
-    <h2 class="text-lg md:text-xl mb-3">[POSTS - WIP]</h2>
+    <h2 class="text-lg md:text-xl mb-3">[POSTS]</h2>
   </section>
 
   <hr class="my-6" />
+
+  <ul>
+    {
+      posts.map((post) => (
+        <a href={`/posts/${post.slug}`}>
+          <li class="p-2 border border-black">
+            <div class="flex flex-col sm:flex-row items-start sm:items-center justify-normal sm:justify-between">
+              <h3 class="text-lg md:text-xl flex-1">{post.title}</h3>
+              <small class="w-full sm:w-auto flex-shrink-0 flex flex-row sm:flex-col items-center md:items-end justify-between">
+                <span class="text-nowrap">
+                  [on: {post.date.toDateString()}]
+                </span>
+                <span class="text-nowrap">[by: {post.author}]</span>
+              </small>
+            </div>
+            <hr class="my-2" />
+            <p class="text-sm font-medium">{post.desc}</p>
+          </li>
+        </a>
+      ))
+    }
+  </ul>
 </Layout>
 
 <style></style>

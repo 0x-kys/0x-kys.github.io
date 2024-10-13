@@ -1,13 +1,22 @@
 // @ts-check
 import { defineConfig } from "astro/config";
-
-// import node from "@astrojs/node";
+import mdx from "@astrojs/mdx";
+import remarkMath from "remark-math";
+import rehypeKatex from "rehype-katex";
 
 export default defineConfig({
-  // output: "hybrid",
   site: "https://0x-kys.github.io",
-
-  // adapter: node({
-  //   mode: "standalone",
-  // }),
+  integrations: [mdx()],
+  markdown: {
+    syntaxHighlight: "shiki",
+    shikiConfig: {
+      // https://shiki.style/themes
+      theme: "vesper",
+      defaultColor: false,
+      wrap: true,
+      transformers: [],
+    },
+    remarkPlugins: [remarkMath],
+    rehypePlugins: [rehypeKatex],
+  },
 });

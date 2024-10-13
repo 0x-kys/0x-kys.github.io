@@ -4,6 +4,24 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  ul ul {
+    @apply list-disc pl-8;
+  }
+
+  ul ol {
+    @apply list-decimal pl-8;
+  }
+
+  ol ul {
+    @apply list-disc pl-8;
+  }
+
+  ol ol {
+    @apply list-decimal pl-8;
+  }
+}
+
 :root {
   --light-bg: #ffffff;
   --light-fg: #000000;
@@ -15,7 +33,7 @@
 html {
   background: var(--light-bg);
   color: var(--light-fg);
-  cursor: crosshair;
+  cursor: crosshair !important;
   scroll-behavior: smooth;
 }
 

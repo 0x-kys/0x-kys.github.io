@@ -1,0 +1,75 @@
+---
+import "../styles/global.css";
+import "../styles/poast.css";
+import Navbar from "../components/Navbar.astro";
+const { frontmatter } = Astro.props;
+---
+
+<!doctype html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="Astro description" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" href="/pfp.jpg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>[ {frontmatter.title} ]</title>
+
+    <!-- KaTeX -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css"
+      integrity="sha384-nB0miv6/jRmo5UMMR1wu3Gz6NLsoTkbqJghGIsx//Rlm+ZU03BU6SQNC66uf4l5+"
+      crossorigin="anonymous"
+    />
+
+    <!-- loading of KaTeX is deferred to speed up page rendering -->
+    <script
+      defer
+      src="https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.js"
+      integrity="sha384-7zkQWkzuo3B5mTepMUcHkMB5jZaolc2xDwL6VFqjFALcbeS9Ggm/Yr2r3Dy4lfFg"
+      crossorigin="anonymous"></script>
+  </head>
+
+  <body> </body><body class="flex items-center justify-center">
+    <main class="w-full mx-6 md:mx-12 lg:w-1/2 p-6">
+      <span id="top"></span>
+      <Navbar />
+      <article>
+        <header>
+          <div class="flex flex-col items-start justify-normal gap-y-2">
+            <h3 class="text-lg md:text-xl lg:text-2xl font-semibold flex-1">
+              {frontmatter.title}
+            </h3>
+            <h4
+              class="w-full sm:w-auto flex-shrink-0 flex flex-col font-medium text-sm md:text-base"
+            >
+              <span class="text-nowrap">
+                [on: {new Date(frontmatter.date).toDateString()}]
+              </span>
+              <span class="text-nowrap">[by: {frontmatter.author}]</span>
+            </h4>
+          </div>
+        </header>
+
+        <hr class="my-4" />
+
+        <main id="poast">
+          <slot />
+        </main>
+      </article>
+    </main>
+    <a
+      href="/posts"
+      class="fixed top-2 left-2 bg-[--light-bg] px-2 py-1 border border-[--light-fg]"
+    >
+      &lt;
+    </a>
+    <button
+      onclick="document.location+='#top';return false;"
+      class="fixed bottom-2 right-2 bg-[--light-bg] px-2 py-1 border border-[--light-fg]"
+    >
+      &uparrow;
+    </button>
+  </body>
+</html>

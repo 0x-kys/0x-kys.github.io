@@ -1,0 +1,141 @@
+#poast {
+  padding: 1rem 2rem;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+  border-style: dashed;
+  font-size: 16px;
+  font-family: "JetBrains Mono", monospace;
+  font-optical-sizing: auto;
+  line-height: 1.6;
+}
+
+#poast h1 {
+  font-size: 2em;
+  margin: .67em 0;
+}
+
+#poast h2 {
+  font-size: 1.5em;
+  margin: .75em 0;
+}
+
+#poast h3 {
+  font-size: 1.17em;
+  margin: .83em 0;
+}
+
+#poast h5 {
+  font-size: .83em;
+  margin: 1.5em 0;
+}
+
+#poast h6 {
+  font-size: .75em;
+  margin: 1.67em 0;
+}
+
+#poast h1,
+#poast h2,
+#poast h3,
+#poast h4,
+#poast h5,
+#poast h6 {
+  font-weight: bolder;
+}
+
+#poast p {
+  margin-bottom: 0.25rem;
+}
+
+#poast a {
+  text-decoration: underline;
+  color: blue;
+}
+
+#poast a:visited {
+  text-decoration: double;
+  color: darkblue;
+}
+
+#poast img {
+  height: 250;
+  width: fit-content;
+}
+
+#poast blockquote {
+  background: whitesmoke;
+  border-radius: 6px;
+  max-width: fit-content;
+  padding: 0.25rem;
+  margin: 1.5rem 0;
+  border-left: 2px solid black;
+  border-right: 2px solid black;
+}
+
+#poast code,
+#poast pre {
+  border-radius: 6px;
+  padding: 0.25rem;
+  font-size: 12px;
+}
+
+#poast ul {
+  list-style-type: disc;
+  list-style-position: inside;
+}
+
+#poast ol {
+  list-style-type: decimal-leading-zero;
+  list-style-position: inside;
+}
+
+#poast code,
+#poast pre {
+  font-size: 14px;
+  padding: 0.5rem;
+  margin: 0.25rem 0;
+}
+
+#poast img {
+  border-radius: 6px;
+  padding: 0.075rem;
+  -webkit-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+  -moz-box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 0px 2px 0px rgba(0, 0, 0, 0.25);
+  margin: 1.67em 0;
+}
+
+#poast hr {
+  margin: 1.25rem 0;
+}
+
+@media (max-width: 720px) {
+  #poast h1 {
+    font-size: 1.75em;
+    margin: .67em 0
+  }
+
+  #poast h2 {
+    font-size: 1.17em;
+    margin: .75em 0
+  }
+
+  #poast h3 {
+    font-size: 1em;
+    margin: .83em 0
+  }
+
+  #poast h5 {
+    font-size: .75em;
+    margin: 1.5em 0
+  }
+
+  #poast h6 {
+    font-size: .63em;
+    margin: 1.67em 0
+  }
+
+  #poast p {
+    font-size: 14px;
+  }
+}
