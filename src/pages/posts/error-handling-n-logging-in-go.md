@@ -14,7 +14,7 @@ So, first of all, there's no `try` and `catch` slop here. We can use `errors.New
 
 #### Using `errors.New()` function
 
-Literally my fav way of returning errors. **Recommended 10/10.**
+Here's the universal traditional way of returning sentinel error messages.
 
 ```go
 //
