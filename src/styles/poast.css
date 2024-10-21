@@ -1,5 +1,5 @@
 #poast {
-  padding: 1rem 2rem;
+  padding: 1rem;
   border-left: 1px solid black;
   border-right: 1px solid black;
   border-style: dashed;
@@ -69,14 +69,15 @@
 }
 
 #poast img {
-  height: 250;
+  max-width: 100%;
+  height: auto;
   width: fit-content;
 }
 
 #poast blockquote {
   background: whitesmoke;
   border-radius: 6px;
-  max-width: fit-content;
+  max-width: 100%;
   padding: 0.25rem;
   margin: 1.5rem 0;
   border-left: 2px solid black;
@@ -88,16 +89,20 @@
   border-radius: 6px;
   padding: 0.25rem;
   font-size: 12px;
+  max-width: 100%;
+  overflow-x: auto;
 }
 
 #poast ul {
   list-style-type: disc;
   list-style-position: inside;
+  padding-left: 1rem;
 }
 
 #poast ol {
   list-style-type: decimal-leading-zero;
   list-style-position: inside;
+  padding-left: 1rem;
 }
 
 #poast code {
@@ -132,32 +137,98 @@
 }
 
 @media (max-width: 720px) {
+  #poast {
+    padding: 0.75rem;
+    font-size: 14px;
+  }
+
   #poast h1 {
     font-size: 1.75em;
-    margin: .67em 0
+    margin: .67em 0;
   }
 
   #poast h2 {
-    font-size: 1.17em;
-    margin: .75em 0
+    font-size: 1.5em;
+    margin: .75em 0;
   }
 
   #poast h3 {
-    font-size: 1em;
-    margin: .83em 0
+    font-size: 1.25em;
+    margin: .83em 0;
+  }
+
+  #poast h4 {
+    font-size: 1.1em;
+    margin: .75em 0;
   }
 
   #poast h5 {
-    font-size: .75em;
-    margin: 1.5em 0
+    font-size: 1em;
+    margin: 1.5em 0;
   }
 
   #poast h6 {
-    font-size: .63em;
-    margin: 1.67em 0
+    font-size: 0.9em;
+    margin: 1.67em 0;
   }
 
   #poast p {
     font-size: 14px;
+    margin: 0.75rem 0;
+  }
+
+  #poast code,
+  #poast pre {
+    font-size: 12px;
+  }
+
+  #poast pre {
+    padding: 0.25rem;
+  }
+
+  #poast ul,
+  #poast ol {
+    padding-left: 0.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  #poast {
+    padding: 0.5rem;
+    font-size: 13px;
+  }
+
+  #poast h1 {
+    font-size: 1.5em;
+  }
+
+  #poast h2 {
+    font-size: 1.3em;
+  }
+
+  #poast h3 {
+    font-size: 1.1em;
+  }
+
+  #poast h4 {
+    font-size: 1em;
+  }
+
+  #poast h5 {
+    font-size: 0.9em;
+  }
+
+  #poast h6 {
+    font-size: 0.8em;
+  }
+
+  #poast p {
+    font-size: 13px;
+    margin: 0.5rem 0;
+  }
+
+  #poast code,
+  #poast pre {
+    font-size: 11px;
   }
 }
