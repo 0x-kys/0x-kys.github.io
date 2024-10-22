@@ -322,7 +322,7 @@ Sometimes, benchmarks aren't enough and you want to go full nerd mode and profil
 go test -bench=Add -cpuprofile=cpu.out
 ```
 
-What to see what's hogging all the resources? Use:
+Want to see what's hogging all the resources? Use:
 
 ```sh
 #
