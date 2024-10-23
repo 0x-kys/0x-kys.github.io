@@ -3,7 +3,7 @@
   border-left: 1px solid black;
   border-right: 1px solid black;
   border-style: dashed;
-  font-size: 16px;
+  font-size: 0.9em;
   font-family: "JetBrains Mono", monospace;
   font-optical-sizing: auto;
   line-height: 1.6;
@@ -107,7 +107,6 @@
 
 #poast code {
   background-color: whitesmoke;
-  font-size: 14px;
   padding: 0.25rem;
   border-left: 1px solid black;
   border-right: 1px solid black;
@@ -118,7 +117,6 @@
 }
 
 #poast pre {
-  font-size: 14px;
   padding: 0.5rem;
   margin: 0.25rem 0;
 }
@@ -139,7 +137,6 @@
 @media (max-width: 720px) {
   #poast {
     padding: 0.75rem;
-    font-size: 14px;
   }
 
   #poast h1 {
@@ -195,7 +192,8 @@
 @media (max-width: 480px) {
   #poast {
     padding: 0.5rem;
-    font-size: 13px;
+    margin-left: 0.1em;
+    margin-right: 0.1em;
   }
 
   #poast h1 {
